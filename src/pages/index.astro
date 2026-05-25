@@ -3,6 +3,8 @@ import BaseHead from '../components/BaseHead.astro';
 import Footer from '../components/Footer.astro';
 import Header from '../components/Header.astro';
 import { SITE_DESCRIPTION, SITE_TITLE } from '../consts';
+
+const base = import.meta.env.BASE_URL.replace(/\/$/, '');
 ---
 
 <!doctype html>
@@ -13,12 +15,12 @@ import { SITE_DESCRIPTION, SITE_TITLE } from '../consts';
 	<body>
 		<Header />
 		<main>
-			<h1>📰 今日校園新聞</h1>
+			<h1>🍿 美食爆爆</h1>
 			<p>
-				歡迎來到今日校園新聞！這裡記錄校園周邊的美食、活動、生活大小事，
-				帶你掌握最新的校園動態。
+				歡迎來到美食爆爆！我們專門挖掘校園周邊最好吃、最隱藏、最值得排隊的美食，
+				從平價便當到特色小吃，通通幫你爆料。
 			</p>
-			<p>瀏覽最新文章，探索校園生活的精彩面貌。</p>
+			<p>每週新鮮報導，讓你的每一餐都不踩雷。快去 <a href={`${base}/blog`}>Blog</a> 看最新文章！</p>
 		</main>
 		<Footer />
 	</body>
