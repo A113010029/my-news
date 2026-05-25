@@ -1,0 +1,25 @@
+---
+import BaseHead from '../components/BaseHead.astro';
+import Footer from '../components/Footer.astro';
+import Header from '../components/Header.astro';
+import { SITE_DESCRIPTION, SITE_TITLE } from '../consts';
+---
+
+<!doctype html>
+<html lang="en">
+	<head>
+		<BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
+	</head>
+	<body>
+		<Header />
+		<main>
+			<h1>📰 今日校園新聞</h1>
+			<p>
+				歡迎來到今日校園新聞！這裡記錄校園周邊的美食、活動、生活大小事，
+				帶你掌握最新的校園動態。
+			</p>
+			<p>瀏覽最新文章，探索校園生活的精彩面貌。</p>
+		</main>
+		<Footer />
+	</body>
+</html>
